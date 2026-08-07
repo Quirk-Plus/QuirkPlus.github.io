@@ -376,15 +376,11 @@ flex-direction:column;
 }
 
 .logo img {
-    height: 35px;
-    width: auto;
+    height:20px !important;
 }
 
 .hero-logo {
-    width: 220px;
-    max-width: 60%;
-    height: auto;
-    margin-bottom: 25px;
+    width:100px !important;
 }
 
 .partner-logos img {
