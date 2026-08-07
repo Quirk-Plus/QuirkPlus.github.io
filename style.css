@@ -374,3 +374,17 @@ flex-direction:column;
 }
 
 }
+
+.logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+
+.hero-logo {
+    width: 350px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+}
