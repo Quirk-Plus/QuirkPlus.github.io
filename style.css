@@ -52,16 +52,6 @@ padding:25px 8%;
 
 }
 
-
-.logo {
-
-font-size:32px;
-
-font-weight:800;
-
-}
-
-
 .logo span,
 .hero span {
 
@@ -375,12 +365,19 @@ flex-direction:column;
 
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height:20px !important;
+    height: 35px;
+    width: auto;
 }
 
 .hero-logo {
-    width:100px !important;
+    width: 200px;
+    height: auto;
 }
 
 .partner-logos img {
