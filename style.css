@@ -54,11 +54,19 @@ nav {
 }
 
 
+.hero-logo-container {
+    display:flex;
+    justify-content:center;
+}
+
+
 .hero-logo {
-    width: 200px;
-    max-width: 70%;
-    height: auto;
-    margin-bottom: 25px;
+
+    width:220px !important;
+    max-width:70%;
+    height:auto;
+    display:block;
+
 }
 
 
