@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>quirkplus.co.uk</title>
-    <link href="https://quirk-plus.github.io/QuirkPlus.github.io/feed.xml" rel="self" />
-    <link href="https://quirk-plus.github.io/QuirkPlus.github.io" />
+    <link href="https://quirkplus.co.uk/feed.xml" rel="self" />
+    <link href="https://quirkplus.co.uk" />
     <updated>1970-01-01T01:00:00+01:00</updated>
     <author>
         <name>Arda</name>
     </author>
-    <id>https://quirk-plus.github.io/QuirkPlus.github.io</id>
+    <id>https://quirkplus.co.uk</id>
 
 </feed>
