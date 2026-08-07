@@ -481,3 +481,17 @@ footer {
 
 
 }
+
+/*Email*/
+
+#contact a {
+    color: #123b69;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+#contact a:hover {
+    color: #55c7ff;
+    text-decoration: underline;
+}
