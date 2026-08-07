@@ -40,10 +40,17 @@ nav {
     align-items: center;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
 
 .logo img {
-    height: 35px;
-    width: auto;
+    height: 35px !important;
+    width: auto !important;
+    max-width: 150px;
+    object-fit: contain;
 }
 
 
