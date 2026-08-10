@@ -28,7 +28,7 @@ header {
         135deg, 
         rgba(7, 21, 47, 0.85), 
         rgba(18, 59, 105, 0.85)
-    ), url('img (26).png');
+    ), url('img(26).png');
     background-size: cover;
     background-position: center 25%;
     color: white;
@@ -110,6 +110,14 @@ main a {
 
 main a:hover {
     color: var(--brand-accent);
+}
+
+/* Logo Formatting */
+.header-logo {
+    max-height: 80px; /* Keeps the logo at a professional, crest-like size */
+    width: auto;
+    margin-bottom: 1.5rem;
+    display: block;
 }
 
 /* --- LISTS & TABLES (For Speakers/Schedule) --- */
