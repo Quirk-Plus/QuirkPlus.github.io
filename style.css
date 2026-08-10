@@ -1,497 +1,236 @@
+/* =========================================
+   1. DESIGN SYSTEM (VARIABLES)
+   ========================================= */
+:root {
+    /* Colors */
+    --color-text: #172033;
+    --color-bg: #ffffff;
+    --color-surface: #f2f7fb;
+    --color-surface-alt: #f3f6fa;
+    --color-primary-dark: #07152f;
+    --color-primary: #123b69;
+    --color-accent: #55c7ff;
+    --color-accent-dark: #00152c;
+    --color-footer: #020916;
+
+    /* Typography */
+    --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+    
+    /* Spacing & Layout */
+    --spacing-sm: 1rem;       /* 16px */
+    --spacing-md: 2rem;       /* 32px */
+    --spacing-lg: 4.5rem;     /* ~72px */
+    --container-padding: 8%;
+    --border-radius: 15px;
+    --transition-speed: 0.2s ease-in-out;
+}
+
+/* =========================================
+   2. RESET & BASE
+   ========================================= */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 body {
-    margin: 0;
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
-    color: #172033;
-    background: #ffffff;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background: var(--color-bg);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
+/* =========================================
+   3. TYPOGRAPHY & HIGHLIGHTS
+   ========================================= */
+.accent-text {
+    color: var(--color-accent);
+}
 
-/* HEADER */
+section h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-md);
+}
 
+/* =========================================
+   4. LAYOUT COMPONENTS
+   ========================================= */
+/* Header & Nav */
 header {
-    background: linear-gradient(
-        135deg,
-        #07152f,
-        #123b69
-    );
-
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
     color: white;
 }
-
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
-}
-
-
-/* LOGOS */
-
-.logo {
-    display: flex;
-    align-items: center;
+    padding: 1.5rem var(--container-padding);
 }
 
 .logo a {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
-
+/* Removed the !important by targeting the image properly */
 .logo img {
-    height: 35px !important;
-    width: auto !important;
+    height: 35px;
+    width: auto;
     max-width: 150px;
     object-fit: contain;
 }
 
-
-.hero-logo-container {
-    display:flex;
-    justify-content:center;
-}
-
-
-.hero-logo {
-
-    width:220px !important;
-    max-width:70%;
-    height:auto;
-    display:block;
-
-}
-
-
-/* NAVIGATION */
-
 .links a {
-
     color: white;
     text-decoration: none;
-    margin-left: 25px;
-    transition: 0.2s;
-
+    margin-left: 1.5rem;
+    transition: color var(--transition-speed);
 }
-
 
 .links a:hover {
-
-    color: #55c7ff;
-
+    color: var(--color-accent);
 }
 
-
-
-.logo span,
-.hero span {
-
-    color: #55c7ff;
-
-}
-
-
-
-/* HERO */
-
+/* Hero Section */
 .hero {
-
-    padding: 100px 10%;
+    padding: var(--spacing-lg) var(--container-padding);
     text-align: center;
-
 }
 
+.hero-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-logo {
+    width: 220px;
+    max-width: 70%;
+    height: auto;
+}
 
 .hero h1 {
-
-    font-size: 90px;
-    margin: 0;
-
+    font-size: clamp(3rem, 8vw, 5.5rem); /* Fluid typography */
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
 }
-
 
 .hero h2 {
-
-    font-size: 35px;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-weight: 500;
-
+    margin-bottom: 1rem;
 }
-
 
 .hero p {
-
-    font-size: 20px;
+    font-size: 1.25rem;
     max-width: 700px;
-    margin: auto;
-
+    margin: 0 auto;
 }
 
-
-
-/* BUTTONS */
-
+/* Buttons */
 .buttons {
-
-    margin-top: 40px;
-
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-
-.primary,
-.secondary {
-
+.btn {
     display: inline-block;
-    padding: 15px 35px;
+    padding: 1rem 2.2rem;
     border-radius: 30px;
     text-decoration: none;
-    margin: 10px;
-    transition: 0.2s;
-
+    font-weight: 600;
+    transition: all var(--transition-speed);
 }
 
-
-.primary {
-
-    background: #55c7ff;
-    color: #00152c;
-    font-weight: bold;
-
+.btn-primary {
+    background: var(--color-accent);
+    color: var(--color-accent-dark);
 }
 
-
-.primary:hover {
-
+.btn-primary:hover {
     transform: translateY(-3px);
-
+    box-shadow: 0 4px 15px rgba(85, 199, 255, 0.4);
 }
 
-
-
-.secondary {
-
+.btn-secondary {
     border: 2px solid white;
     color: white;
-
+    background: transparent;
 }
 
-
-.secondary:hover {
-
-    background:white;
-    color:#07152f;
-
-}
-
-
-
-/* DATE BOX */
-
-.date-box {
-
-    margin: 50px auto 0;
+.btn-secondary:hover {
     background: white;
-    color: #07152f;
-    width: 260px;
-    padding: 25px;
-    border-radius: 15px;
-
+    color: var(--color-primary-dark);
 }
 
-
-
-/* GENERAL SECTIONS */
-
+/* General Sections */
 section {
-
-    padding: 70px 10%;
-
+    padding: var(--spacing-lg) var(--container-padding);
 }
 
-
-section h2 {
-
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 40px;
-
-}
-
-
-section p {
-
+.section-text {
     max-width: 900px;
-    margin: auto;
-
+    margin: 0 auto;
+    text-align: center;
 }
 
-
-.centre {
-
-    text-align:center;
-
-}
-
-
-
-/* STATISTICS */
-
-.highlight {
-
-    display:flex;
-    justify-content:center;
-    gap:50px;
-    background:#f2f7fb;
-    text-align:center;
-
-}
-
-
-.highlight h3 {
-
-    font-size:45px;
-    color:#123b69;
-    margin:0;
-
-}
-
-
-
-/* CARDS */
-
+/* Cards & Grids */
 .cards {
-
-    display:flex;
-    gap:30px;
-    justify-content:center;
-    flex-wrap:wrap;
-
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
 
 .card {
-
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    width:300px;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
-
-    transition:0.2s;
-
+    background: var(--color-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    width: min(100%, 300px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform var(--transition-speed);
 }
-
 
 .card:hover {
-
-    transform:translateY(-5px);
-
+    transform: translateY(-5px);
 }
 
-
-
-/* UNIVERSITY SECTION */
-
-.country-boxes {
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:30px;
-
-    margin-top:40px;
-
-}
-
-
-
-.country-box {
-
-    background:#f3f6fa;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    box-shadow:
-    0 5px 20px rgba(0,0,0,0.08);
-
-}
-
-
-
-.country-box h3 {
-
-    text-align:center;
-
-    font-size:24px;
-
-    color:#123b69;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.country-box ul {
-
-    padding-left:20px;
-
-    margin:0;
-
-}
-
-
-
-.country-box li {
-
-    margin-bottom:10px;
-
-    line-height:1.4;
-
-}
-
-
-
-/* PARTNER LOGOS */
-
-.partner-logos {
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
-
-}
-
-
-.partner-logos img {
-
-    height:45px;
-    width:auto;
-    opacity:0.85;
-
-}
-
-
-
-/* SPONSORS */
-
-#sponsors {
-
-    background:#07152f;
-
-    color:white;
-
-    text-align:center;
-
-}
-
-
-
-/* FOOTER */
-
-footer {
-
-    background:#020916;
-
-    color:white;
-
-    padding:30px;
-
-    text-align:center;
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:1000px){
-
+/* =========================================
+   5. RESPONSIVE DESIGN
+   ========================================= */
+@media (max-width: 1000px) {
     .country-boxes {
-
-        grid-template-columns:1fr;
-
+        grid-template-columns: 1fr;
     }
-
 }
 
-
-
-@media(max-width:800px){
-
-
+@media (max-width: 800px) {
     nav {
-
-        flex-direction:column;
-
+        flex-direction: column;
+        gap: 1.5rem;
     }
-
-
+    
     .links {
-
-        margin-top:20px;
-
-        text-align:center;
-
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
-
-
+    
     .links a {
-
-        display:inline-block;
-
-        margin:10px;
-
+        margin-left: 0;
     }
-
-
-    .hero h1 {
-
-        font-size:55px;
-
-    }
-
-
-    .hero h2 {
-
-        font-size:26px;
-
-    }
-
-
+    
     .highlight {
-
-        flex-direction:column;
-
+        flex-direction: column;
+        gap: 1.5rem;
     }
-
-
-}
-
-/*Email*/
-
-#contact a {
-    color: #123b69;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-
-#contact a:hover {
-    color: #55c7ff;
-    text-decoration: underline;
 }
