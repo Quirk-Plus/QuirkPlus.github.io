@@ -23,28 +23,37 @@ body {
 
 /* --- HEADER & NAVIGATION --- */
 header {
-    background: linear-gradient(135deg, var(--brand-dark), var(--brand-main));
+    /* Gradient overlay set to 85% opacity over your specific image */
+    background: linear-gradient(
+        135deg, 
+        rgba(7, 21, 47, 0.85), 
+        rgba(18, 59, 105, 0.85)
+    ), url('img (26).jpg');
+    background-size: cover;
+    background-position: center 25%;
     color: white;
-    padding: 2rem 5%;
+    padding: 5rem 5% 2rem 5%;
     border-bottom: 4px solid var(--brand-accent);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
     letter-spacing: -0.02em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 header p {
     margin: 0.5rem 0 0 0;
     font-size: 1.1rem;
-    color: #e0e0e0;
+    color: #f8f9fa;
+    max-width: 600px;
 }
 
 nav {
-    margin-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 1rem;
     display: flex;
     gap: 1.5rem;
@@ -58,6 +67,7 @@ nav a {
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 0.05em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 nav a:hover, nav a.active {
@@ -173,4 +183,26 @@ footer a:hover {
 .contact-info {
     margin-bottom: 1rem;
     font-weight: bold;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    header {
+        padding-top: 3rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    table, th, td {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
 }
