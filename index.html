@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quirk+ | UK Physics Conference</title>
+    <meta name="description" content="Quirk+ Physics Conference - A national undergraduate physics conference across the UK and Ireland.">
+    <title>Quirk+ | UK & Ireland Physics Conference</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Quirk+ Physics Conference</h1>
-        <p>Organised by students, for students</p>
-        <p>A national undergraduate physics conference across the UK</p>
-        
+        <div class="header-titles">
+            <h1>Quirk+ Physics Conference</h1>
+            <p class="subtitle">Organised by students, for students</p>
+            <p class="lead">A national undergraduate physics conference across the UK</p>
+        </div>
         
         <nav aria-label="Main Navigation">
             <a href="index.html" class="active">Home</a>
@@ -24,60 +26,73 @@
     </header>
 
     <main>
-        <h2>About the Conference</h2>
-        <p>Quirk+ is a collaborative undergraduate physics conference organised between universities across the United Kingdom. The conference provides students with the opportunity to showcase research interests, explore new areas of physics, network with peers, and connect with academic and industry leaders.</p>
+        <section id="about">
+            <h2>About the Conference</h2>
+            <!-- Giving this an 'abstract' class makes it look like a formal paper introduction -->
+            <p class="abstract"><strong>Abstract:</strong> Quirk+ is a collaborative undergraduate physics conference organised between universities across the United Kingdom. The conference provides students with the opportunity to showcase research interests, explore new areas of physics, network with peers, and connect with academic and industry leaders.</p>
 
-        <p><strong>2027 Dates:</strong> TBC<br>
-        <strong>Locations:</strong> London & Northern England<br>
-        <strong>Registration:</strong> <a href="#">Register for 2027 Here</a></p>
+            <div class="conference-details">
+                <p><strong>2027 Dates:</strong> TBC</p>
+                <p><strong>Locations:</strong> London & Northern England</p>
+                <p><strong>Registration:</strong> <a href="#">Register for 2027 Here</a></p>
+            </div>
+        </section>
 
-        <h2>Conference Highlights</h2>
-        <ul class="academic-list">
-            <li><strong>2 Days</strong> across two distinct UK locations.</li>
-            <li><strong>20+ Partner Universities</strong> including international observers.</li>
-            <li><strong>500+ Attendees</strong> comprising students, researchers, and industry professionals.</li>
-        </ul>
+        <section id="highlights">
+            <h2>Conference Highlights</h2>
+            <ul class="academic-list">
+                <li><strong>2 Days</strong> across two distinct UK locations.</li>
+                <li><strong>20+ Partner Universities</strong> including international observers.</li>
+                <li><strong>500+ Attendees</strong> comprising students, researchers, and industry professionals.</li>
+            </ul>
+        </section>
 
-        <h2>Schedule Overview</h2>
-        <!-- Using a standard HTML table is the best, most readable way to list schedules -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Day</th>
-                    <th>Location</th>
-                    <th>Focus</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>London Day (Date TBC)</td>
-                    <td>TBC, London</td>
-                    <td>Lectures, research showcases, and networking.</td>
-                </tr>
-                <tr>
-                    <td>Northern Day (Date TBC)</td>
-                    <td>TBC, Northern England</td>
-                    <td>University presentations and collaborative sessions.</td>
-                </tr>
-            </tbody>
-        </table>
+        <section id="schedule">
+            <h2>Schedule Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Location</th>
+                        <th>Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>London Day</strong><br><small>Date TBC</small></td>
+                        <td>TBC, London</td>
+                        <td>Lectures, research showcases, and networking.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Northern Day</strong><br><small>Date TBC</small></td>
+                        <td>TBC, Northern England</td>
+                        <td>University presentations and collaborative sessions.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <h2>Gallery: Past Editions</h2>
-        <div class="gallery">
-            <!-- Replace src with actual images. Notice there are no rounded corners. -->
-            <img src="https://via.placeholder.com/400x300?text=Conference+Photo+1" alt="Students presenting a poster">
-            <img src="https://via.placeholder.com/400x300?text=Conference+Photo+2" alt="Keynote speaker on stage">
-            <img src="https://via.placeholder.com/400x300?text=Conference+Photo+3" alt="Networking event">
-        </div>
+        <section id="gallery">
+            <h2>Gallery: Past Editions</h2>
+            <div class="gallery">
+                <!-- Replace src with actual images -->
+                <img src="https://via.placeholder.com/400x300?text=Conference+Photo+1" alt="Students presenting a poster">
+                <img src="https://via.placeholder.com/400x300?text=Conference+Photo+2" alt="Keynote speaker on stage">
+                <img src="https://via.placeholder.com/400x300?text=Conference+Photo+3" alt="Networking event">
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="contact-info">
-            Email: <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> | 
-            LinkedIn: <a href="https://www.linkedin.com/company/quirk-plus/" target="_blank" rel="noopener noreferrer">Quirk+ Official</a>
+            <strong>Contact:</strong> <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> | 
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/quirk-plus/" target="_blank" rel="noopener noreferrer">Quirk+ Official</a>
         </div>
-        <p>© 2026 British and Irish Physics Societies. Organised collaboratively by participating universities.</p>
-        <p> Disclaimer: It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves. </p>
+        
+        <div class="footer-legal">
+            <p>© 2026 British and Irish Physics Societies. Organised collaboratively by participating universities.</p>
+            <p class="disclaimer"><strong>Disclaimer:</strong> It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves.</p>
+        </div>
     </footer>
 
 </body>
