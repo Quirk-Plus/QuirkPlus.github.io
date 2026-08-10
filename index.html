@@ -5,28 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Quirk+ Physics Conference - A national undergraduate physics conference across the UK and Ireland.">
     <title>Quirk+ | UK & Ireland Physics Conference</title>
+    
+    <!-- Website Browser Icon (Favicon) Restored -->
+    <link rel="icon" type="image/png" href="assets/Logos/QUIRK_COLOUR.png">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-        <div class="header-titles">
-            <!-- Added the logo here -->
+    <header>
+        <div class="header-content">
+            <!-- Scalable Logo -->
             <img src="assets/Logos/QUIRK_COLOUR_WHITE.png" alt="Quirk+ Logo" class="header-logo">
             
-            <h1>Quirk+ Physics Conference</h1>
-            <p class="subtitle">Organised by students, for students</p>
-            <p class="lead">A national undergraduate physics conference across the UK</p>
+            <div class="header-titles">
+                <h1>Quirk+ Physics Conference</h1>
+                <p class="subtitle">Organised by students, for students</p>
+                <p class="lead">A national undergraduate physics conference across the UK</p>
+            </div>
         </div>
-        
-        <nav aria-label="Main Navigation">
-            <a href="index.html" class="active">Home</a>
-            <a href="programme.html">Programme</a>
-            <a href="speakers.html">Speakers</a>
-            <a href="universities.html">Universities</a>
-            <a href="gallery.html">Past Editions</a>
-        </nav>
-    </header>
         
         <nav aria-label="Main Navigation">
             <a href="index.html" class="active">Home</a>
@@ -40,13 +37,23 @@
     <main>
         <section id="about">
             <h2>About the Conference</h2>
-            <!-- Giving this an 'abstract' class makes it look like a formal paper introduction -->
-            <p class="abstract"><strong>Abstract:</strong> Quirk+ is a collaborative undergraduate physics conference organised between universities across the United Kingdom. The conference provides students with the opportunity to showcase research interests, explore new areas of physics, network with peers, and connect with academic and industry leaders.</p>
+            <div class="abstract">
+                <p><strong>Abstract:</strong> Quirk+ is a collaborative undergraduate physics conference organised between universities across the United Kingdom. The conference provides students with the opportunity to showcase research interests, explore new areas of physics, network with peers, and connect with academic and industry leaders.</p>
+            </div>
 
             <div class="conference-details">
-                <p><strong>2027 Dates:</strong> TBC</p>
-                <p><strong>Locations:</strong> London & Northern England</p>
-                <p><strong>Registration:</strong> <a href="#">Register for 2027 Here</a></p>
+                <div class="detail-block">
+                    <strong>2027 Dates</strong>
+                    <span>To Be Confirmed</span>
+                </div>
+                <div class="detail-block">
+                    <strong>Locations</strong>
+                    <span>London & Northern England</span>
+                </div>
+                <div class="detail-block">
+                    <strong>Registration</strong>
+                    <a href="#">Apply for 2027 Here</a>
+                </div>
             </div>
         </section>
 
@@ -61,7 +68,7 @@
 
         <section id="schedule">
             <h2>Schedule Overview</h2>
-            <table>
+            <table class="academic-table">
                 <thead>
                     <tr>
                         <th>Day</th>
@@ -87,7 +94,6 @@
         <section id="gallery">
             <h2>Gallery: Past Editions</h2>
             <div class="gallery">
-                <!-- Replace src with actual images -->
                 <img src="https://via.placeholder.com/400x300?text=Conference+Photo+1" alt="Students presenting a poster">
                 <img src="https://via.placeholder.com/400x300?text=Conference+Photo+2" alt="Keynote speaker on stage">
                 <img src="https://via.placeholder.com/400x300?text=Conference+Photo+3" alt="Networking event">
@@ -97,7 +103,7 @@
 
     <footer>
         <div class="contact-info">
-            <strong>Contact:</strong> <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> | 
+            <strong>Contact:</strong> <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> <span class="divider">|</span> 
             <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/quirk-plus/" target="_blank" rel="noopener noreferrer">Quirk+ Official</a>
         </div>
         
