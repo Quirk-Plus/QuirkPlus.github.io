@@ -206,3 +206,63 @@ footer a:hover {
         padding: 0.5rem;
     }
 }
+
+/* --- ENHANCED TYPOGRAPHY & HIERARCHY --- */
+
+/* Header Text Formatting */
+.header-titles .subtitle {
+    font-style: italic;
+    color: var(--brand-accent);
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.header-titles .lead {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 0;
+    color: #f8f9fa;
+}
+
+/* Formal Abstract Style */
+.abstract {
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--brand-main);
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Grouping the basic details */
+.conference-details {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.conference-details p {
+    margin: 0;
+}
+
+/* Section Spacing */
+main section {
+    margin-bottom: 3rem;
+}
+
+/* Footer Formatting */
+.footer-legal p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-legal .disclaimer {
+    font-size: 0.8rem;
+    color: #b0b0b0;
+    max-width: 700px;
+    margin: 1rem auto 0 auto;
+    line-height: 1.4;
+}
