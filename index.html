@@ -6,16 +6,51 @@
     <meta name="description" content="Quirk+ Physics Conference - A national undergraduate physics conference across the UK and Ireland.">
     <title>Quirk+ | UK & Ireland Physics Conference</title>
     
-    <!-- Website Browser Icon (Favicon) Restored -->
     <link rel="icon" type="image/png" href="assets/Logos/QUIRK_COLOUR.png">
-    
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Inline styles added specifically for the Sponsor and Layout images to keep the main CSS clean -->
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        @media (min-width: 768px) {
+            .about-grid {
+                grid-template-columns: 3fr 2fr;
+            }
+        }
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .sponsors-section {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+        .sponsor-logo {
+            max-width: 250px;
+            height: auto;
+            margin-top: 1rem;
+            filter: grayscale(100%); /* Makes the sponsor logo look more professional until hovered */
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        .sponsor-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <div class="header-content">
-            <!-- Scalable Logo -->
             <img src="assets/Logos/QUIRK_COLOUR_WHITE.png" alt="Quirk+ Logo" class="header-logo">
             
             <div class="header-titles">
@@ -37,22 +72,32 @@
     <main>
         <section id="about">
             <h2>About the Conference</h2>
-            <div class="abstract">
-                <p><strong>Abstract:</strong> Quirk+ is a collaborative undergraduate physics conference organised between universities across the United Kingdom. The conference provides students with the opportunity to showcase research interests, explore new areas of physics, network with peers, and connect with academic and industry leaders.</p>
-            </div>
+            
+            <div class="about-grid">
+                <div>
+                    <div class="abstract">
+                        <p><strong>Abstract:</strong> Quirk+ is a collaborative undergraduate physics conference organised between universities across the United Kingdom. The conference provides students with the opportunity to showcase research interests, explore new areas of physics, network with peers, and connect with academic and industry leaders.</p>
+                    </div>
 
-            <div class="conference-details">
-                <div class="detail-block">
-                    <strong>2027 Dates</strong>
-                    <span>To Be Confirmed</span>
+                    <div class="conference-details">
+                        <div class="detail-block">
+                            <strong>2027 Dates</strong>
+                            <span>To Be Confirmed</span>
+                        </div>
+                        <div class="detail-block">
+                            <strong>Locations</strong>
+                            <span>London & Northern England</span>
+                        </div>
+                        <div class="detail-block">
+                            <strong>Registration</strong>
+                            <a href="#">Apply for 2027 Here</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="detail-block">
-                    <strong>Locations</strong>
-                    <span>London & Northern England</span>
-                </div>
-                <div class="detail-block">
-                    <strong>Registration</strong>
-                    <a href="#">Apply for 2027 Here</a>
+                
+                <!-- Action Shot embedded next to the About text -->
+                <div>
+                    <img src="assets/images/aedan.jpg" alt="Student delivering a physics lecture at Quirk+" class="featured-image">
                 </div>
             </div>
         </section>
@@ -94,10 +139,19 @@
         <section id="gallery">
             <h2>Gallery: Past Editions</h2>
             <div class="gallery">
-                <img src="https://via.placeholder.com/400x300?text=Conference+Photo+1" alt="Students presenting a poster">
-                <img src="https://via.placeholder.com/400x300?text=Conference+Photo+2" alt="Keynote speaker on stage">
-                <img src="https://via.placeholder.com/400x300?text=Conference+Photo+3" alt="Networking event">
+                <img src="assets/images/group_sitting_2.jpg" alt="Audience members attentively listening to a lecture">
+                <img src="assets/images/jenny_erik_poimenidis.jpg" alt="Students networking and discussing physics">
+                <img src="assets/images/quirk_lecture_student.jpg" alt="Speaker explaining flux eruption timescales">
+                <img src="assets/images/epfl_ai1.jpg" alt="Two speakers presenting together on stage">
+                <img src="assets/images/quirk_annual_dinner.jpg" alt="Attendees enjoying the formal Quirk+ annual dinner">
             </div>
+        </section>
+        
+        <section class="sponsors-section">
+            <h2>Supported By</h2>
+            <a href="https://www.quantinuum.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/quantinuum.jpg" alt="Quantinuum Logo" class="sponsor-logo">
+            </a>
         </section>
     </main>
 
