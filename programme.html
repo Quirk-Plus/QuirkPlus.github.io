@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Participating universities and institutions in the Quirk+ Physics Conference.">
+    <meta name="description" content="The history and participating institutions of the Quirk+ Physics Conference.">
     <title>Quirk+ | About Us</title>
     
     <link rel="icon" type="image/png" href="assets/Logos/QUIRK_COLOUR.png">
     <link rel="stylesheet" href="style.css">
     
-    <!-- Specific styles for the universities directory layout -->
+    <!-- Specific styles for the universities directory layout and history section -->
     <style>
         .directory-section {
             margin-bottom: 2.5rem;
@@ -24,22 +24,71 @@
             column-count: 1;
             column-gap: 3rem;
         }
-        /* Splits long lists into 2 columns on desktop */
         @media (min-width: 768px) {
             .uni-list.split {
                 column-count: 2;
             }
         }
+
+        /* Styles for the new History section */
+        .history-content {
+            font-size: 1.05rem;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+        .history-content p {
+            margin-bottom: 1.5rem;
+        }
+        .history-image-right {
+            float: right;
+            width: 300px;
+            margin: 0 0 1.5rem 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .history-image-left {
+            float: left;
+            width: 350px;
+            margin: 0.5rem 2rem 1.5rem 0;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        /* Clears the floats so text doesn't overlap weirdly on smaller screens */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media (max-width: 768px) {
+            .history-image-right, .history-image-left {
+                float: none;
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+
+        /* Sponsor block fixes */
         .sponsors-section {
             text-align: center;
             padding: 2rem 0;
             border-top: 1px solid var(--border-color);
             margin-top: 3rem;
         }
+        .sponsor-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
         .sponsor-logo {
             max-width: 250px;
             height: auto;
-            margin-top: 1rem;
+            margin-top: 0;
             filter: grayscale(100%);
             opacity: 0.8;
             transition: all 0.3s ease;
@@ -65,13 +114,35 @@
         
         <nav aria-label="Main Navigation">
             <a href="index.html">Home</a>
-            <a href="programme.html" class="active">About us</a>
+            <a href="programme.html" class="active">About Us</a>
             <a href="speakers.html">Speakers</a>
             <a href="gallery.html">Past Editions</a>
         </nav>
     </header>
 
     <main>
+        
+        <section id="history" class="history-content clearfix">
+            <h2>Our History</h2>
+            
+            <img src="assets/images/quirk2025group.jpg" alt="The original 2025 QUIRK cohort" class="history-image-right">
+            
+            <p>QUIRK+ began as the London Universities Physics Conference in 2025, an initiative founded by Elias Fink, consisting of the committees of Queen Mary University of London, University College London, Imperial College London, Royal Holloway University of London, and King's College London. It was a brief get-together in the Blackett Laboratory with guest lectures and informal networking over pizza. Students loved the early career networking and meeting with peers across London.</p>
+
+            <p>The conference was a success, and word quickly spread. By mid-2025, the "Physics Societies" of QUIRK (an acronym of the 5 founding members) expanded into the University of Cambridge, Surrey, Southampton, Bath, Oxford University, and to two foreign observers in the physics societies of the Swiss Federal Technology Institute of Lausanne (EPFL) and Technical University of Munich (TUM).</p>
+            
+            <img src="assets/images/elias_ziyaad_jenny_hamza_jana.jpg" alt="The main 2026 organising committee" class="history-image-left">
+            
+            <p>In 2026, we hosted the inaugural QUIRK+ conference in Bush House (KCL). Over 500 participants, speakers, volunteers, and sponsors turned up.</p>
+
+            <p>We then hosted Part II at the Ray Dolby Centre on February 14th, 2026, with our annual dinner for speakers and sponsors subsequently held at Selwyn College.</p>
+
+            <p>Ahead of the 2027 edition, we have multiple new joining us from across the UK & Ireland, giving our group a new name: the <strong>"British and Irish Physics Societies"</strong>. We aim to have over 1000 people at our next event.</p>
+
+            <p>All in all, QUIRK+ serves as a way for students and young professionals to network and present their research on a nationally-renowned stage in front of hundreds of peers.</p>
+        </section>
+
+
         <section id="institutions">
             <h2>Participating Institutions</h2>
             
@@ -129,12 +200,14 @@
         <!-- Keeping the sponsor global to all pages -->
         <section class="sponsors-section">
             <h2>Supported By</h2>
-            <a href="https://www.quantinuum.com/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/Logos/quantinuum-logo_horizontal_black.png" alt="Quantinuum Logo" class="sponsor-logo">
-            </a>
-          <a href="https://www.iop.org/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/Logos/IOP_Logo.png" alt="Institute of Physics Logo" class="sponsor-logo">
-            </a>  
+            <div class="sponsor-grid">
+                <a href="https://www.quantinuum.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/quantinuum-logo_horizontal_black.png" alt="Quantinuum Logo" class="sponsor-logo">
+                </a>
+                <a href="https://www.iop.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/IOP_Logo.png" alt="Institute of Physics Logo" class="sponsor-logo">
+                </a>
+            </div>
         </section>
     </main>
 
