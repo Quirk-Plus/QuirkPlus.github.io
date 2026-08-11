@@ -27,7 +27,7 @@ header {
         135deg, 
         rgba(7, 21, 47, 0.88), 
         rgba(18, 59, 105, 0.88)
-    ), url('assets/img (26).jpg');
+    ), url('assets/images/quirkgroup_2.jpg'); /* UPDATE THIS LINE */
     background-size: cover;
     background-position: center 25%;
     color: white;
