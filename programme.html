@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Participating universities and institutions in the Quirk+ Physics Conference.">
+    <title>Quirk+ | Universities</title>
+    
+    <link rel="icon" type="image/png" href="assets/Logos/QUIRK_COLOUR.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Specific styles for the universities directory layout -->
+    <style>
+        .directory-section {
+            margin-bottom: 2.5rem;
+        }
+        .directory-section h3 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .uni-list {
+            column-count: 1;
+            column-gap: 3rem;
+        }
+        /* Splits long lists into 2 columns on desktop */
+        @media (min-width: 768px) {
+            .uni-list.split {
+                column-count: 2;
+            }
+        }
+        .sponsors-section {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+        }
+        .sponsor-logo {
+            max-width: 250px;
+            height: auto;
+            margin-top: 1rem;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        .sponsor-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="assets/Logos/QUIRK_COLOUR_WHITE.png" alt="Quirk+ Logo" class="header-logo">
+            
+            <div class="header-titles">
+                <h1>Quirk+ Physics Conference</h1>
+                <p class="subtitle">Organised by students, for students</p>
+                <p class="lead">A national undergraduate physics conference across the UK</p>
+            </div>
+        </div>
+        
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="programme.html">Programme</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="universities.html" class="active">Universities</a>
+            <a href="gallery.html">Past Editions</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="institutions">
+            <h2>Participating Institutions</h2>
+            
+            <div class="abstract">
+                <p>Quirk+ brings together physics students, researchers, and academic professionals from leading institutions across the United Kingdom, Ireland, and select international observer programs. Our collaborative network is the foundation of the conference.</p>
+            </div>
+
+            <div class="directory-section">
+                <h3>🇬🇧 United Kingdom</h3>
+                <!-- The 'split' class activates the 2-column layout for this long list -->
+                <ul class="academic-list uni-list split">
+                    <li>City St George's, University of London</li>
+                    <li>Imperial College London</li>
+                    <li>King's College London (KCL)</li>
+                    <li>Nottingham Trent University (NTU)</li>
+                    <li>Queen Mary University of London</li>
+                    <li>Royal Holloway</li>
+                    <li>University College London (UCL)</li>
+                    <li>University of Bath</li>
+                    <li>University of Birmingham</li>
+                    <li>University of Bristol</li>
+                    <li>University of Cambridge</li>
+                    <li>University of Exeter</li>
+                    <li>University of Kent</li>
+                    <li>University of Leeds</li>
+                    <li>University of Lincoln</li>
+                    <li>University of Nottingham</li>
+                    <li>University of Oxford</li>
+                    <li>University of Sheffield</li>
+                    <li>University of Southampton</li>
+                    <li>University of St Andrews</li>
+                    <li>University of Surrey</li>
+                    <li>University of Warwick</li>
+                </ul>
+            </div>
+
+            <div class="directory-section">
+                <h3>🇮🇪 Ireland</h3>
+                <ul class="academic-list uni-list">
+                    <li>Trinity College Dublin</li>
+                    <li>University College Cork (UCC)</li>
+                    <li>University College Dublin (UCD)</li>
+                </ul>
+            </div>
+
+            <div class="directory-section">
+                <h3>🌍 International Observers</h3>
+                <ul class="academic-list uni-list">
+                    <li>Young Physicist’s Forum (Switzerland)</li>
+                    <li>ZaPF (Germany)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Keeping the sponsor global to all pages -->
+        <section class="sponsors-section">
+            <h2>Supported By</h2>
+            <a href="https://www.quantinuum.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/Logos/quantinuum-logo_horizontal_black.png" alt="Quantinuum Logo" class="sponsor-logo">
+            </a>
+          <a href="https://www.iop.org/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/Logos/IOP_Logo.png" alt="Institute of Physics Logo" class="sponsor logo">
+            </a>  
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Contact:</strong> <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> <span class="divider">|</span> 
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/quirk-plus/" target="_blank" rel="noopener noreferrer">Quirk+ Official</a>
+        </div>
+        
+        <div class="footer-legal">
+            <p>© 2026 British and Irish Physics Societies. Organised collaboratively by participating universities.</p>
+            <p class="disclaimer"><strong>Disclaimer:</strong> It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
