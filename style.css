@@ -145,17 +145,21 @@ main a:hover {
 }
 
 /* --- PREMIUM MODULES --- */
-.abstract {
-    background-color: #f8fafd;
-    border-left: 4px solid var(--brand-main);
-    padding: 1.5rem;
-    margin-bottom: 2.5rem;
-    color: #333;
+/* Clean, academic text styling replacing the old 'vibecoded' abstract box */
+.academic-prose {
     font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+    padding-right: 1rem; /* Gives just a tiny bit of breathing room before the photo */
 }
 
-.abstract p {
-    margin: 0;
+.academic-prose p {
+    margin-bottom: 1.25rem;
+}
+
+/* Optional: drop the margin on the last paragraph to keep the grid perfectly aligned */
+.academic-prose p:last-child {
+    margin-bottom: 0;
 }
 
 .conference-details {
