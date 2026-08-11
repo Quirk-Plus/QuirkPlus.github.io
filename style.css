@@ -317,9 +317,19 @@ footer a:hover {
 
 .hero-banner-img {
     width: 100%;
-    height: 400px;
-    object-fit: cover; 
+    max-width: 1000px; /* Stops it from stretching across huge PC monitors */
+    aspect-ratio: 21 / 9; /* Keeps a perfect, wide proportion without aggressive cropping */
+    object-fit: cover;
     object-position: center 25%;
     display: block;
+    margin: 0 auto; /* Centers the image perfectly on large screens */
     border-bottom: 4px solid var(--brand-main);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Adds a slight shadow so it sits nicely on the page */
+}
+
+/* On mobile devices, we make it slightly taller so the faces aren't too small */
+@media (max-width: 768px) {
+    .hero-banner-img {
+        aspect-ratio: 16 / 9; 
+    }
 }
