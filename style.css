@@ -316,15 +316,18 @@ footer a:hover {
 }
 
 .hero-banner-img {
-    width: 100%;
-    max-width: 1000px; /* Stops it from stretching across huge PC monitors */
-    aspect-ratio: 21 / 9; /* Keeps a perfect, wide proportion without aggressive cropping */
+    width: 90%; /* Gives breathing room on mobile */
+    max-width: 800px; /* Matches your main white text box EXACTLY */
+    aspect-ratio: 16 / 7; /* A sleek, cinematic wide crop */
     object-fit: cover;
     object-position: center 25%;
     display: block;
-    margin: 0 auto; /* Centers the image perfectly on large screens */
-    border-bottom: 4px solid var(--brand-main);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Adds a slight shadow so it sits nicely on the page */
+    margin: 2rem auto; /* Centers it perfectly */
+    margin-bottom: -3rem; /* Tucks the bottom of the photo neatly behind the white content box */
+    border-radius: 6px; /* Softens the corners */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Adds premium depth */
+    position: relative;
+    z-index: 1; /* Ensures it sits behind the main text box */
 }
 
 /* On mobile devices, we make it slightly taller so the faces aren't too small */
