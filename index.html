@@ -45,7 +45,28 @@
             filter: grayscale(0%);
             opacity: 1;
         }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--brand-main);
+            color: white !important;
+            padding: 1rem 2rem;
+            text-decoration: none !important;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--brand-dark);
+        }
     </style>
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Quirk+ Physics Conference 2027">
+    <meta property="og:description" content="The UK and Ireland's largest student-led undergraduate physics conference. Join 1,000+ delegates in London.">
+    <meta property="og:image" content="https://quirkplus.co.uk/assets/images/quirkgroup_2.jpg">
+    <meta property="og:url" content="https://quirkplus.co.uk/">
+    <meta property="og:type" content="website">
 </head>
 <body>
 
@@ -95,7 +116,9 @@
                         </div>
                         <div class="detail-block">
                             <strong>Registration</strong>
-                            <a href="#">Apply for 2027 Here</a>
+                            <br>
+                            <!-- Replace the '#' with your actual Google Form or ticketing link -->
+                            <a href="#" class="cta-button">Apply for 2027 Here</a>
                         </div>
                     </div>
                 </div>
