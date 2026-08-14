@@ -40,22 +40,35 @@
         .history-content p {
             margin-bottom: 1.5rem;
         }
+        
+        /* Updated Floating Image Styles to accommodate Captions (<figure>) */
         .history-image-right {
             float: right;
             width: 300px;
             margin: 0 0 1.5rem 2rem;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
         .history-image-left {
             float: left;
             width: 350px;
             margin: 0.5rem 2rem 1.5rem 0;
+        }
+        .history-image-right img, .history-image-left img {
+            width: 100%;
+            height: auto;
             border: 1px solid var(--border-color);
             border-radius: 4px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            display: block;
         }
+        .history-caption {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-align: center;
+            font-style: italic;
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+
         /* Clears the floats so text doesn't overlap weirdly on smaller screens */
         .clearfix::after {
             content: "";
@@ -119,12 +132,13 @@
             <a href="sponsors.html">Partner with Us</a>
             <a href="gallery.html">Past Editions</a>
         </nav>
+        
         <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Quirk+ Physics Conference 2027">
-    <meta property="og:description" content="The UK and Ireland's largest student-led undergraduate physics conference. Join 1,000+ delegates in London.">
-    <meta property="og:image" content="https://quirkplus.co.uk/assets/images/quirkgroup_2.png">
-    <meta property="og:url" content="https://quirkplus.co.uk/">
-    <meta property="og:type" content="website">
+        <meta property="og:title" content="Quirk+ Physics Conference 2027">
+        <meta property="og:description" content="The UK and Ireland's largest student-led undergraduate physics conference. Join 1,000+ delegates in London.">
+        <meta property="og:image" content="https://quirkplus.co.uk/assets/images/quirkgroup_2.png">
+        <meta property="og:url" content="https://quirkplus.co.uk/">
+        <meta property="og:type" content="website">
     </header>
 
     <main>
@@ -132,19 +146,27 @@
         <section id="history" class="history-content clearfix">
             <h2>Our History</h2>
             
-            <img src="assets/images/quirk2025group.jpg" alt="The original 2025 QUIRK cohort" class="history-image-right">
+            <p>While the modern iteration of our coalition is new, the spirit of connecting young physicists across borders has deep roots. As early as 1994, an initiative known as NEXUS (The Network of Student Physics Societies) was created to encourage communication and co-operation between young physicists at Universities and Colleges in the UK and Ireland. Functioning as the student section of the Institute of Physics, NEXUS laid the foundational groundwork for national student collaboration. Decades later, this identical drive for unity inspired the creation of QUIRK+.</p>
+
+            <figure class="history-image-right">
+                <img src="assets/images/quirk2025group.jpg" alt="The original 2025 QUIRK cohort">
+                <figcaption class="history-caption">The founding cohort at the inaugural 2025 London Universities Physics Conference.</figcaption>
+            </figure>
             
-            <p>QUIRK+ began as the London Universities Physics Conference in 2025, an initiative founded by Elias Fink, consisting of the committees of Queen Mary University of London, University College London, Imperial College London, Royal Holloway University of London, and King's College London. It was a brief get-together in the Blackett Laboratory with guest lectures and informal networking over pizza. Students loved the early career networking and meeting with peers across London.</p>
+            <p>QUIRK+ began as the London Universities Physics Conference in 2025, an initiative founded by Elias Fink and Hamza Mian, consisting of the committees of Queen Mary University of London, University College London, Imperial College London, Royal Holloway University of London, and King's College London. It was a brief get-together in the Blackett Laboratory with guest lectures and informal networking over pizza. Students loved the early career networking and meeting with peers across London.</p>
 
             <p>The conference was a success, and word quickly spread. By mid-2025, the "Physics Societies" of QUIRK (an acronym of the 5 founding members) expanded into the University of Cambridge, Surrey, Southampton, Bath, Oxford University, and to two foreign observers in the physics societies of the Swiss Federal Technology Institute of Lausanne (EPFL) and Technical University of Munich (TUM).</p>
             
-            <img src="assets/images/elias_ziyaad_jenny_hamza_jana.jpg" alt="The main 2026 organising committee" class="history-image-left">
+            <figure class="history-image-left">
+                <img src="assets/images/elias_ziyaad_jenny_hamza_jana.jpg" alt="The main 2026 organising committee">
+                <figcaption class="history-caption">The 2026 QUIRK+ organising committee.<br>(Top to bottom: Hamza, Elias, Jana, Ziyaad, Jenny)</figcaption>
+            </figure>
             
             <p>In 2026, we hosted the inaugural QUIRK+ conference in Bush House (KCL). Over 500 participants, speakers, volunteers, and sponsors turned up.</p>
 
             <p>We then hosted Part II at the Ray Dolby Centre on February 14th, 2026, with our annual dinner for speakers and sponsors subsequently held at Selwyn College.</p>
 
-            <p>Ahead of the 2027 edition, we have multiple new joining us from across the UK & Ireland, giving our group a new name: the <strong>"British and Irish Physics Societies"</strong>. We aim to have over 1000 people at our next event.</p>
+            <p>Ahead of the 2027 edition, we have multiple new universities joining us from across the UK & Ireland, giving our group a new name: the <strong>"British and Irish Physics Societies"</strong>. We aim to have over 1000 people at our next event.</p>
 
             <p>All in all, QUIRK+ serves as a way for students and young professionals to network and present their research on a nationally-renowned stage in front of hundreds of peers.</p>
         </section>
@@ -159,7 +181,6 @@
 
             <div class="directory-section">
                 <h3>🇬🇧 United Kingdom</h3>
-                <!-- The 'split' class activates the 2-column layout for this long list -->
                 <ul class="academic-list uni-list split">
                     <li>City St George's, University of London</li>
                     <li>Imperial College London</li>
@@ -226,7 +247,7 @@
         
         <div class="footer-legal">
             <p>© 2026 British and Irish Physics Societies. Organised collaboratively by participating universities.</p>
-            <p class="disclaimer"><strong>Disclaimer:</strong> It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves.</p>
+            <p class="disclaimer"><strong>Disclaimer:</strong> BIPS is a voluntary unincorporated association. It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves.</p>
         </div>
     </footer>
 
