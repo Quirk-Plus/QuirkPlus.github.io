@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore past editions, press coverage, and photo galleries of the QUIRK+ Physics Conference.">
+    <title>Quirk+ | Past Editions</title>
+    
+    <link rel="icon" type="image/png" href="assets/Logos/QUIRK_COLOUR.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Specific styles for the Gallery Page -->
+    <style>
+        .edition-section {
+            margin-bottom: 4rem;
+        }
+        
+        .edition-section h2 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: var(--brand-dark);
+        }
+        
+        .edition-desc {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        /* Press & Social Links Styling */
+        .press-links {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .press-link {
+            display: inline-flex;
+            align-items: center;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--brand-dark);
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        
+        .press-link:hover {
+            background: var(--brand-main);
+            color: white;
+            border-color: var(--brand-main);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Photo Grid Styling */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .photo-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .photo-grid img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Sponsor block fixes */
+        .sponsors-section {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+        }
+        .sponsor-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .sponsor-logo {
+            max-width: 250px;
+            height: auto;
+            margin-top: 0;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        .sponsor-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="assets/Logos/QUIRK_COLOUR_WHITE.png" alt="Quirk+ Logo" class="header-logo">
+            
+            <div class="header-titles">
+                <h1>Quirk+ Physics Conference</h1>
+                <p class="subtitle">Organised by students, for students</p>
+                <p class="lead">A national undergraduate physics conference across the UK</p>
+            </div>
+        </div>
+        
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="programme.html">About Us</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="sponsors.html">Partner with Us</a>
+            <a href="gallery.html" class="active">Past Editions</a>
+        </nav>
+        
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:title" content="Quirk+ Physics Conference 2027">
+        <meta property="og:description" content="The UK and Ireland's largest student-led undergraduate physics conference. Join 1,000+ delegates in London.">
+        <meta property="og:image" content="https://quirkplus.co.uk/assets/images/quirkgroup_2.png">
+        <meta property="og:url" content="https://quirkplus.co.uk/">
+        <meta property="og:type" content="website">
+    </header>
+
+    <main>
+        
+        <div class="abstract" style="margin-bottom: 3rem;">
+            <p>From an intimate gathering of London universities to a major national event spanning multiple cities, explore the history, press coverage, and photo galleries of our previous conference editions.</p>
+        </div>
+
+        <!-- 2026 Edition -->
+        <section class="edition-section">
+            <h2>2026: The National Expansion</h2>
+            <p class="edition-desc">In 2026, QUIRK+ expanded into a two-part national event. Part I was hosted at King's College London's Bush House, followed by Part II at the University of Cambridge's Ray Dolby Centre. The events brought together over 500 participants, featuring expansive sponsor stalls, student lectures, and an exclusive formal dinner at Selwyn College.</p>
+            
+            <!-- Press & Social Links -->
+            <div class="press-links">
+                <a href="https://roarnews.co.uk/2026/kcl-hosts-second-annual-quirk/" target="_blank" rel="noopener noreferrer" class="press-link">
+                    📰 Read Coverage in Roar News
+                </a>
+                <a href="https://www.linkedin.com/posts/quirk-plus_quirk-cambridge-is-a-wrap-last-saturday-activity-7431040245896409088-45QY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADOnhmEBirj-rxcmpH3KOBx4S5XIwum-NJs" target="_blank" rel="noopener noreferrer" class="press-link">
+                    💼 Cambridge Wrap-Up (LinkedIn)
+                </a>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="photo-grid">
+                <img src="assets/images/quirkgroup_2.jpg" alt="QUIRK+ 2026 Group Photo at Cambridge">
+                <img src="assets/images/grande_salle.JPG" alt="Main lecture hall at QUIRK+ 2026">
+                <img src="assets/images/dinner_cinematic.JPG" alt="Formal VIP Dinner at Selwyn College">
+                <img src="assets/images/quantinuum_talk.JPG" alt="Quantinuum Workshop Presentation">
+                <img src="assets/images/IOP_TALK.JPG" alt="Institute of Physics Workshop">
+                <img src="assets/images/elias_ziyaad_jenny_hamza_jana.jpg" alt="The 2026 Organising Committee">
+            </div>
+        </section>
+
+        <!-- 2025 Edition -->
+        <section class="edition-section">
+            <h2>2025: The Inaugural QUIRK</h2>
+            <p class="edition-desc">The original London Universities Physics Conference was founded by the physics societies of QMUL, UCL, Imperial, Royal Holloway, and KCL. Hosted at Imperial College's Blackett Laboratory, it set the foundation for student-led academic networking, featuring early-career advice, lectures, and a highly collaborative atmosphere.</p>
+            
+            <!-- Press & Social Links -->
+            <div class="press-links">
+                <a href="https://www.linkedin.com/posts/rajeswarmadhav_had-an-incredible-time-at-quirk-2025-the-ugcPost-7296825695278669825-JClb/" target="_blank" rel="noopener noreferrer" class="press-link">
+                    💼 Delegate Experience (LinkedIn)
+                </a>
+                <a href="https://www.instagram.com/p/DGHM3v-NncJ/?hl=fr" target="_blank" rel="noopener noreferrer" class="press-link">
+                    📸 2025 Highlights (Instagram)
+                </a>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="photo-grid">
+                <img src="assets/images/quirk2025group.jpg" alt="The original 2025 QUIRK cohort">
+                <img src="assets/images/quirkgroup_1.jpg" alt="Students gathering at Imperial College">
+                <img src="assets/images/meuf_homme_pinard.png" alt="Networking and discussion">
+            </div>
+        </section>
+
+        <!-- Sponsors -->
+        <section class="sponsors-section">
+            <h2>Supported By</h2>
+            <div class="sponsor-grid">
+                <a href="https://www.quantinuum.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/quantinuum-logo_horizontal_black.png" alt="Quantinuum Logo" class="sponsor-logo">
+                </a>
+                <a href="https://www.iop.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/IOP_Logo.png" alt="Institute of Physics Logo" class="sponsor-logo">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Contact:</strong> <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> <span class="divider">|</span> 
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/quirk-plus/" target="_blank" rel="noopener noreferrer">Quirk+ Official</a>
+        </div>
+        
+        <div class="footer-legal">
+            <p>© 2026 British and Irish Physics Societies. Organised collaboratively by participating universities.</p>
+            <p class="disclaimer"><strong>Disclaimer:</strong> BIPS is a voluntary unincorporated association. It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
