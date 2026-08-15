@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information on speaking at the British and Irish Physics Societies QUIRK+ Conference.">
+    <title>Quirk+ | Speakers</title>
+    
+    <link rel="icon" type="image/png" href="assets/Logos/QUIRK_COLOUR.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Specific styles for the Speakers Page -->
+    <style>
+        .speakers-section {
+            margin-bottom: 3.5rem;
+        }
+        .speakers-section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Floating Image Styles */
+        .speaker-image-right {
+            float: right;
+            width: 400px;
+            margin: 0 0 1.5rem 2rem;
+        }
+        .speaker-image-left {
+            float: left;
+            width: 400px;
+            margin: 0.5rem 2rem 1.5rem 0;
+        }
+        .speaker-image-right img, .speaker-image-left img {
+            width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            display: block;
+        }
+        .speaker-caption {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-align: center;
+            font-style: italic;
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media (max-width: 768px) {
+            .speaker-image-right, .speaker-image-left {
+                float: none;
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--brand-main);
+            color: white !important;
+            padding: 1rem 2rem;
+            text-decoration: none !important;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--brand-dark);
+        }
+
+        /* Sponsor block fixes */
+        .sponsors-section {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+        }
+        .sponsor-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .sponsor-logo {
+            max-width: 250px;
+            height: auto;
+            margin-top: 0;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        .sponsor-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="assets/Logos/QUIRK_COLOUR_WHITE.png" alt="Quirk+ Logo" class="header-logo">
+            
+            <div class="header-titles">
+                <h1>Quirk+ Physics Conference</h1>
+                <p class="subtitle">Organised by students, for students</p>
+                <p class="lead">A national undergraduate physics conference across the UK</p>
+            </div>
+        </div>
+        
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="programme.html">About Us</a>
+            <a href="speakers.html" class="active">Speakers</a>
+            <a href="sponsors.html">Partner with Us</a>
+            <a href="gallery.html">Past Editions</a>
+        </nav>
+        
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:title" content="Quirk+ Physics Conference 2027">
+        <meta property="og:description" content="The UK and Ireland's largest student-led undergraduate physics conference. Join 1,000+ delegates in London.">
+        <meta property="og:image" content="https://quirkplus.co.uk/assets/images/quirkgroup_2.png">
+        <meta property="og:url" content="https://quirkplus.co.uk/">
+        <meta property="og:type" content="website">
+    </header>
+
+    <main>
+        <section class="speakers-section clearfix">
+            <h2>Call for Speakers</h2>
+            
+            <figure class="speaker-image-right">
+                <img src="assets/images/aedan.jpg" alt="A student delivering a physics lecture at Quirk+">
+                <figcaption class="speaker-caption">Presenting complex data to hundreds of peers on the main stage.</figcaption>
+            </figure>
+            
+            <div class="abstract">
+                <p>At the heart of the QUIRK+ Conference is a commitment to fostering the next generation of scientific communicators. We provide a nationally-renowned stage for young physicists to share their passion, present their research, and spark discourse among hundreds of their peers.</p>
+            </div>
+            
+            <p>Unlike traditional academic conferences that restrict podium time to senior academics, BIPS proudly welcomes a diverse range of speakers from across the academic spectrum. Whether you are an ambitious undergraduate presenting your very first final-year research project, or a doctoral candidate showcasing cutting-edge advancements in your specific field, we want to hear from you.</p>
+        </section>
+
+        <section class="speakers-section clearfix">
+            <h2>The Selection Process</h2>
+            
+            <figure class="speaker-image-left">
+                <img src="assets/images/quirk_lecture_student.jpg" alt="A speaker explaining flux eruption timescales">
+                <figcaption class="speaker-caption">A delegate breaking down eruption timescales during a previous session.</figcaption>
+            </figure>
+            
+            <p>To ensure a high-calibre and widely representative programme, our speaker selection process is rigorously democratic and peer-led.</p>
+            
+            <p>All submitted abstracts are reviewed and selected by a mutual academic panel comprised of student committee representatives from our partner universities across the UK and Ireland. This collaborative approach guarantees that the topics chosen directly reflect the most engaging, relevant, and innovative areas of physics and engineering that students actually want to learn about.</p>
+
+            <p>We welcome submissions from all fields of physics and engineering, from astrophysics and quantum computing to medical physics, theoretical frameworks and aerospace engineering. We look for clarity, passion, and the ability to communicate complex ideas to a broad physics audience.</p>
+
+            <div style="margin-top: 2rem;">
+                <a href="#" class="cta-button">Submit an Abstract (Coming Soon)</a>
+            </div>
+        </section>
+
+        <!-- Keeping the sponsor global to all pages -->
+        <section class="sponsors-section">
+            <h2>Supported By</h2>
+            <div class="sponsor-grid">
+                <a href="https://www.quantinuum.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/quantinuum-logo_horizontal_black.png" alt="Quantinuum Logo" class="sponsor-logo">
+                </a>
+                <a href="https://www.iop.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/IOP_Logo.png" alt="Institute of Physics Logo" class="sponsor-logo">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Contact:</strong> <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> <span class="divider">|</span> 
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/quirk-plus/" target="_blank" rel="noopener noreferrer">Quirk+ Official</a>
+        </div>
+        
+        <div class="footer-legal">
+            <p>© 2026 British and Irish Physics Societies. Organised collaboratively by participating universities.</p>
+            <p class="disclaimer"><strong>Disclaimer:</strong> BIPS is a voluntary unincorporated association. It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
