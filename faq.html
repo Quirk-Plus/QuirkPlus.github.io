@@ -36,6 +36,15 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
+        .sponsor-logo {
+            max-height: 60px; /* This is the magic fix - it locks the height */
+            width: auto;      /* Keeps the proportions perfect */
+            max-width: 250px; /* Just in case a logo is ridiculously wide */
+            margin-top: 0;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
 
         /* Accordion Styling */
         details {
