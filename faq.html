@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions about the British and Irish Physics Societies and the QUIRK+ Conference.">
+    <title>Quirk+ | FAQ</title>
+    
+    <link rel="icon" type="image/png" href="assets/Logos/QUIRK_COLOUR.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Specific styles for the FAQ Accordion -->
+    <style>
+        .faq-section {
+            margin-bottom: 4rem;
+            max-width: 800px; /* Keeps the text highly readable */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--brand-dark);
+            border-bottom: none;
+        }
+
+        .faq-category {
+            margin-bottom: 2.5rem;
+        }
+
+        .faq-category h3 {
+            font-size: 1.3rem;
+            color: var(--brand-main);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Accordion Styling */
+        details {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: box-shadow 0.2s ease;
+        }
+
+        details:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        /* The clickable question bar */
+        summary {
+            font-weight: bold;
+            font-size: 1.05rem;
+            color: var(--brand-dark);
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            list-style: none; /* Removes the default arrow */
+            position: relative;
+            outline: none;
+        }
+
+        /* Removes the default Safari/Chrome arrow */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Custom Plus/Minus Icon */
+        summary::after {
+            content: "+";
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--brand-main);
+            font-weight: normal;
+            transition: transform 0.3s ease;
+        }
+
+        /* Changes to a minus when opened */
+        details[open] summary::after {
+            content: "−";
+        }
+
+        /* The answer text */
+        .faq-answer {
+            padding: 0 1.5rem 1.25rem 1.5rem;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #475569;
+            border-top: 1px solid #f1f5f9;
+            margin-top: 0.5rem;
+            padding-top: 1rem;
+        }
+
+        .faq-answer p {
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-answer a {
+            color: var(--brand-main);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="assets/Logos/QUIRK_COLOUR_WHITE.png" alt="Quirk+ Logo" class="header-logo">
+            
+            <div class="header-titles">
+                <h1>Quirk+ Physics Conference</h1>
+                <p class="subtitle">Organised by students, for students</p>
+                <p class="lead">A national undergraduate physics conference for the UK and Ireland</p>
+            </div>
+        </div>
+        
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="programme.html">About Us</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="sponsors.html">Partner with Us</a>
+            <a href="gallery.html">Past Editions</a>
+            <a href="faq.html" class="active">FAQ</a>
+        </nav>
+        
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:title" content="Quirk+ Physics Conference 2027">
+        <meta property="og:description" content="The UK and Ireland's largest student-led undergraduate physics conference. Join 1,000+ delegates in London.">
+        <meta property="og:image" content="https://quirkplus.co.uk/assets/images/quirkgroup_2.png">
+        <meta property="og:url" content="https://quirkplus.co.uk/">
+        <meta property="og:type" content="website">
+    </header>
+
+    <main>
+        
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <!-- General Information -->
+            <div class="faq-category">
+                <h3>General Information</h3>
+                
+                <details>
+                    <summary>What is the difference between BIPS and QUIRK+?</summary>
+                    <div class="faq-answer">
+                        <p>The <strong>British and Irish Physics Societies (BIPS)</strong> is the overarching coalition and network of student-led physics societies from universities across the UK and Ireland.</p>
+                        <p><strong>QUIRK+</strong> is the name of our flagship annual conference, organised and hosted by BIPS.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Who can attend the QUIRK+ Conference?</summary>
+                    <div class="faq-answer">
+                        <p>The conference is primarily aimed at undergraduate and Master's physics students. However, we also warmly welcome PhD candidates, early-career researchers, and students from closely related fields (such as mathematics, engineering, and computer science).</p>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary>How much does a ticket cost?</summary>
+                    <div class="faq-answer">
+                        <p>Thanks to the generous support of our corporate sponsors and academic partners, general admission to the daytime QUIRK+ Conference is completely free for students. This ensures that financial barriers do not prevent the brightest minds from accessing top-tier networking and career opportunities.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Logistics & Attendance -->
+            <div class="faq-category">
+                <h3>Logistics & Attendance</h3>
+                
+                <details>
+                    <summary>Are travel bursaries available for students travelling from outside London?</summary>
+                    <div class="faq-answer">
+                        <p>We are actively working with our sponsors and participating university departments to secure travel grants for delegates travelling from Ireland, Scotland, and regions outside the South East. More information on how to apply for travel subsidies will be released alongside the official registration form.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What is the dress code?</summary>
+                    <div class="faq-answer">
+                        <p>For the main daytime conference and career fairs, the dress code is <strong>Smart Casual</strong>. We recommend dressing professionally, as you will be networking directly with both students and industry. However, if you want to represent your university through hoodies or other merchandise, that is completely fine too!</p>
+                        <p>If you have been invited to our annual dinner, the dress code is up to the external venue provider, which has been formal and black tie in recent years.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Is accommodation provided?</summary>
+                    <div class="faq-answer">
+                        <p>We do not provide direct accommodation for general delegates. However, we will publish a list of recommended affordable hostels and hotels closer to the event date. We highly recommend coordinating with your university's physics society to book group travel and accommodation to save costs.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Participation -->
+            <div class="faq-category">
+                <h3>Participation & Speakers</h3>
+                
+                <details>
+                    <summary>How can I apply to be a speaker?</summary>
+                    <div class="faq-answer">
+                        <p>We welcome speaker submissions from all academic levels! A call for abstracts will be announced shortly. All submissions will be reviewed blindly by a mutual academic panel comprised of representatives from our partner universities. Please visit our <a href="speakers.html">Speakers page</a> for more details.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>How can my university join BIPS?</summary>
+                    <div class="faq-answer">
+                        <p>If your university's Physics Society is not currently listed on our <a href="programme.html">Participating Institutions</a> page and you would like to join the BIPS network, we would love to hear from you. Please have your society's President or academic liaison email us at <strong>info@quirkplus.co.uk</strong> to discuss integration.</p>
+                    </div>
+                </details>
+            </div>
+
+        </section>
+
+        <!-- Keeping the sponsor global to all pages -->
+        <section class="sponsors-section">
+            <h2>Supported By</h2>
+            <div class="sponsor-grid">
+                <a href="https://www.quantinuum.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/quantinuum-logo_horizontal_black.png" alt="Quantinuum Logo" class="sponsor-logo">
+                </a>
+                <a href="https://www.iop.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Logos/IOP_Logo.png" alt="Institute of Physics Logo" class="sponsor-logo">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Contact:</strong> <a href="mailto:info@quirkplus.co.uk">info@quirkplus.co.uk</a> <span class="divider">|</span> 
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/quirk-plus/" target="_blank" rel="noopener noreferrer">Quirk+ Official</a>
+        </div>
+        
+        <div class="footer-legal">
+            <p>© 2026 British and Irish Physics Societies. Organised collaboratively by participating universities.</p>
+            <p class="disclaimer"><strong>Disclaimer:</strong> BIPS is a voluntary unincorporated association. It is expressly understood that membership belongs solely to the student society, and BIPS claims no legal or administrative affiliation with the parent universities themselves.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
